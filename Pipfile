@@ -59,6 +59,8 @@ PyYAML = "*"
 Whoosh = "==2.7.4"
 model_mommy = "==1.5.0"
 asgi-redis = "*"
+dj-database-url = "*"
+django-redis-cache = "*"
 
 [requires]
 python_version = "3.6"
