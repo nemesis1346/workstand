@@ -1,3 +1,5 @@
 cd bikeshop_project
-npm install
+yarn install
+yarn build:production
 python manage.py migrate
+python manage.py collectstatic --noinput
