@@ -86,7 +86,16 @@ ROLLBAR = {
     'root': BASE_DIR,
 }
 
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL': os.environ.get('BONSAI_URL'),
+        'INDEX_NAME': 'haystack',
+    },
+}
+
 COMPRESS_ENABLED = True
+COMPRESS_OFFLINE = True
 
 rollbar.init(**ROLLBAR)
 
