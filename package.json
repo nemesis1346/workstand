@@ -4,9 +4,9 @@
   "description": "A membership management app for the BCBC.",
   "main": "index.js",
   "scripts": {
-    "build": "bikeshop_project/node_modules/.bin/webpack --config bikeshop_project/webpack.dev.config.js --progress --colors",
-    "build:production": "bikeshop_project/node_modules/.bin/webpack --config bikeshop_project/webpack.prod.config.js --progress --colors",
-    "watch": "node bikeshop_project/server.js",
+    "build:dev": "node_modules/.bin/webpack --config webpack.dev.config.js --progress --colors",
+    "build": "node_modules/.bin/webpack --config webpack.prod.config.js --progress --colors",
+    "watch": "node server.js",
     "test": "jest"
   },
   "author": "Drew Larson",
