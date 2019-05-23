@@ -86,6 +86,8 @@ ROLLBAR = {
     'root': BASE_DIR,
 }
 
+COMPRESS_ENABLED = True
+
 rollbar.init(**ROLLBAR)
 
 MAILCHIMP_API_KEY = os.environ.get('MAILCHIMP_API_KEY')
