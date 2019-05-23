@@ -10,7 +10,7 @@ from .base import *  # noqa
 # SECURITY WARNING: keep the secret key used in production secret!
 WSGI_APPLICATION = 'bikeshop.wsgi.application'
 
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'secret')
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -81,7 +81,7 @@ if 'test' in sys.argv or 'test_coverage' in sys.argv:
 MIDDLEWARE_CLASSES += ['rollbar.contrib.django.middleware.RollbarNotifierMiddleware']
 
 ROLLBAR = {
-    'access_token': '91808a727b9a4679a89720132071391a',
+    'access_token': os.environ.get('ROLLBAR_ACCESS_TOKEN'),
     'environment': 'production',
     'root': BASE_DIR,
 }
@@ -89,4 +89,4 @@ ROLLBAR = {
 rollbar.init(**ROLLBAR)
 
 MAILCHIMP_API_KEY = os.environ.get('MAILCHIMP_API_KEY')
-MAILCHIMP_USERNAME = 'drew@bcbc.bike'
+MAILCHIMP_USERNAME = os.environ.get('MAILCHIMP_USERNAME')
