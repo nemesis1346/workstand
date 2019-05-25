@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ff20015af6c63bd58962e5f0729d05c89d4e2c63bc7126f55bde2adee70a3797"
+            "sha256": "02e2f6a97727604646625a6ee9d7e80f032c5e112da170176d7354c3c46501d2"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -256,15 +256,16 @@
         },
         "django-haystack": {
             "hashes": [
-                "sha256:0bc91f635211e42de828ab92083e9f5369eda2e94adceb936ad5c0678a01c52e"
+                "sha256:1d1c3564b1e13309ec329e937e25a44976df5d85120d3f0ffc91a861c105b657",
+                "sha256:4ee0eaf8f4e5dba310ec5add513c14f1094ce359c3cfa7a545ffb4fbfd1f5e30"
             ],
             "index": "pypi",
-            "version": "==2.6.1"
+            "version": "==2.5.1"
         },
         "django-haystack-algolia": {
             "editable": true,
             "git": "https://github.com/drwlrsn/django-haystack-algolia.git",
-            "ref": "ae6a9845c2f4ed9fa7dc5ea07b9aac72b4fffb71"
+            "ref": "0a0d8c5824a6345e27dd65c38676630b64732ab7"
         },
         "django-libsass": {
             "hashes": [
@@ -789,10 +790,11 @@
         },
         "django-haystack": {
             "hashes": [
-                "sha256:0bc91f635211e42de828ab92083e9f5369eda2e94adceb936ad5c0678a01c52e"
+                "sha256:1d1c3564b1e13309ec329e937e25a44976df5d85120d3f0ffc91a861c105b657",
+                "sha256:4ee0eaf8f4e5dba310ec5add513c14f1094ce359c3cfa7a545ffb4fbfd1f5e30"
             ],
             "index": "pypi",
-            "version": "==2.6.1"
+            "version": "==2.5.1"
         },
         "django-libsass": {
             "hashes": [
