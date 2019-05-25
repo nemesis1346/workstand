@@ -88,10 +88,12 @@ ROLLBAR = {
 
 HAYSTACK_CONNECTIONS = {
     'default': {
-        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
-        'URL': os.environ.get('SEARCHBOX_SSL_URL'),
-        'INDEX_NAME': 'haystack',
-    },
+        'ENGINE': 'haystack_algolia.algolia_backend.AlgoliaEngine',
+        'APP_ID': 'I0KTPJJPRU',
+        'API_KEY': '67bb889a0cb77311d8eee2dcfb428256',
+        'INDEX_NAME_PREFIX': 'prod_workstand_',
+        'TIMEOUT': 60 * 5
+    }
 }
 
 COMPRESS_ENABLED = True

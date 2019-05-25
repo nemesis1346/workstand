@@ -63,6 +63,8 @@ asgi-redis = "*"
 dj-database-url = "*"
 django-redis-cache = "*"
 whitenoise = "*"
+algoliasearch = "==1.10.0"
+django-haystack-algolia = {editable = true,git = "https://github.com/drwlrsn/django-haystack-algolia.git",ref = "django-1.19"}
 
 [requires]
 python_version = "3.6"
